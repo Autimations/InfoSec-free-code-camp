@@ -22,7 +22,8 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        "script-src": ["'self'", "trusted-cdn.com"],
+        defaultSrc: ['self'],
+        scriptSrc: ["'self'", "trusted-cdn.com"],
       },
     },
   })
