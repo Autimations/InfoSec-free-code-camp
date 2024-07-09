@@ -14,6 +14,7 @@ app.use(helmet.ieNoOpen());
 app.use(helmet.hsts({
   maxAge: ninetyDaysInSeconds, force: true
 }))
+helmet.dnsPrefetchControl();
 
 
 
